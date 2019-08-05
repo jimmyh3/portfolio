@@ -1,10 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './index.css';
+import Main from './components/Main';
 import Test from './components/Test';
 
 function App() {
   return (
+    <Main />
+    /*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -22,6 +26,8 @@ function App() {
       </header>
       <Test data="Testing from React"/>
     </div>
+    */
+    
   );
 }
 
