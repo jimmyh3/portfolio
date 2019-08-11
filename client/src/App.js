@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import './index.css';
+//import logo from './logo.svg';
+//import './App.css';
+//import './index.css';
 import Main from './components/Main';
-import Test from './components/Test';
+//import Test from './components/Test';
 
 function App() {
   return (
+    //<Test />
     <Main />
     /*
     <div className="App">
