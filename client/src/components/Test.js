@@ -1,4 +1,5 @@
 import React from 'react';
+import '../test.css';
 
 class Test extends React.Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class Test extends React.Component {
         }
     }
 
+    /*
     componentDidMount() {
         fetch("/test")
             .then((res) => {
@@ -24,14 +26,27 @@ class Test extends React.Component {
                 
             })
     }
-
+    */
+   
     render() {
         const jfx = 
         <div>
             <p>{this.state.data}</p>
-        </div>
+        </div>;
 
-        return jfx;
+        const other =
+        <div class="wrap">
+            <div class="top"></div>
+
+            <div class="mid">
+                
+                <div class="left">left</div>
+            </div>
+
+            <div class="bottom"></div>
+        </div>;
+
+        return other;
     }
 }
 
