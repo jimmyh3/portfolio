@@ -7,6 +7,7 @@ body {
 }
 
 body, ul {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -17,21 +18,68 @@ code {
 }
 
 .layout {
-  display: grid;
   height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: max-content 1fr;
   grid-template-areas: "one" "two";
 }
 
-.grid-one {
-  grid-area: "one";
+@media only screen and (max-width: 600px) {
+  .grid-one {
+    grid-column: 1 / 13;
+    grid-area: "one";
+  }
+
+  .grid-two {
+    grid-column: 1 / 13;
+    grid-area: "two";
+  }
 }
 
-.grid-two {
-  grid-area: "two";
+@media only screen and (min-width: 600px) {
+  .grid-one {
+    grid-column: 1 / 13;
+    grid-area: "one";
+  }
+
+  .grid-two {
+    grid-column: 1 / 13;
+    grid-area: "two";
+  }
 }
 
-.profile-heading > *{
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid-one {
+    grid-column: 2 / 12;
+    grid-area: "one";
+  }
+
+  .grid-two {
+    grid-column: 2 / 12;
+    grid-area: "two";
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .grid-one {
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: "one";
+  }
+
+  .grid-two {
+    width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: "two";
+  }
+}
+
+.profile-heading > * {
   display: block;
   text-align: center;
   margin-left: auto;
@@ -94,13 +142,13 @@ code {
 .project-card {
   background-color: white;
   color: black;
-  border: 5px;
   border-style: solid;
   border-color: grey;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   width: 275px;
   float: left;
+  margin: 10px;
 }
 
 .project-card img {
