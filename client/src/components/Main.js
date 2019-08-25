@@ -8,7 +8,7 @@ class Main extends React.Component {
 
     constructor(props) {
         super(props);
-
+        this.refTopOfPage = React.createRef();
         this.state = {
             navtab_buttons: {
                 project_bgColor: "#f44336",
@@ -46,14 +46,14 @@ class Main extends React.Component {
 
             return newState;
         })
-        window.scrollTo(0, 0);
+        window.scrollTo(0, this.refTopOfPage.current.offsetTop);
     }
 
     render() {
         const jsx = 
         <div>
             <div className="layout">
-                <header className="grid-one profile-heading">
+                <header className="grid-one profile-heading" ref={this.refTopOfPage}>
                     {/* Add everything here first and then worry about design later. */}
                     <img src={profile_img} alt="Profile Image"></img>
                     <h2>Full Stack Developer</h2>
@@ -129,7 +129,8 @@ class Main extends React.Component {
                                 display: this.state.navtab_panels.aboutMe_display,
                                 backgroundColor : this.state.navtab_panels.aboutMe_bgColor
                             }}
-                        > About Me Panels
+                        >
+                        About Me
                         </div>
                     </section>
                 </main>
