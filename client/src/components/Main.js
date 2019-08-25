@@ -46,6 +46,7 @@ class Main extends React.Component {
 
             return newState;
         })
+        window.scrollTo(0, 0);
     }
 
     render() {
@@ -66,7 +67,7 @@ class Main extends React.Component {
                     {/* */}
                     <section className="profile-info">
                         <div className="navtab-buttons">
-                            <button 
+                            <button
                                 style={{
                                     backgroundColor: this.state.navtab_buttons.project_bgColor,
                                     color: this.state.navtab_buttons.project_color
@@ -75,6 +76,7 @@ class Main extends React.Component {
                             >
                             Projects
                             </button>
+
                             <button
                                 style={{
                                     backgroundColor: this.state.navtab_buttons.aboutMe_bgColor,

@@ -109,6 +109,13 @@ code {
   height: 100%;
 }
 
+.profile-info .navtab-buttons {
+  list-style-type: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .profile-info .navtab-buttons button {
   width: 25%;
   border: none;
