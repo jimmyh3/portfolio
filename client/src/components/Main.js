@@ -13,6 +13,8 @@ class Main extends React.Component {
             showProjectTab: true,
             showAboutMeTab: false
         }
+
+        this.handleClickButtonPanel = this.handleClickButtonPanel.bind(this);
     }
 
     handleClickButtonPanel(index) {
@@ -28,13 +30,12 @@ class Main extends React.Component {
     }
 
     render() {
-        const panelToDisplay = () => {
-            if (this.state.showProjectTab) { 
-                return <ProjectTab content={{project_display: "block", project_bgColor: "darkgray"}}/>;
-            } else {
-                return <AboutMeTab content={{project_display: "block", project_bgColor: "darkgray"}}/>;
-            }
-        };
+        let activePanel;
+        if (this.state.showProjectTab) { 
+            activePanel = <ProjectTab content={{project_display: "block"}}/>;
+        } else {
+            activePanel = <AboutMeTab content={{project_display: "block"}}/>;
+        }
 
         const panelBtnColor = (isActive, activeColor, inactiveColor) => {
             const style = {};
@@ -80,7 +81,7 @@ class Main extends React.Component {
                             </button>
                         </div>
                         
-                        {panelToDisplay()}
+                        {activePanel}
 
                     </section>
                 </main>
