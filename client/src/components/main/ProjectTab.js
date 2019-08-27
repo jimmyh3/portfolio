@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../../logo.svg';
+import teamIChessIcon from '../../resources/team-i-chess_icon.svg';
+import myplaceIcon from '../../resources/myplace_icon.svg';
 
 class ProjectTab extends React.Component {
     constructor(props) {
@@ -22,30 +23,17 @@ class ProjectTab extends React.Component {
             }}
         >
             <div className="project-card">
-
-                <img src={logo} alt="Project"></img>
-                <hr />
-                <div className="project-card-container">
-                    <h4>Project 1</h4>
-                    <p>Project description here...</p>
+                <img src={teamIChessIcon} alt="Project"></img>
+                <div className="project-card-text">
+                    <h4>Team-I Chess</h4>
+                    <p>An online multiplayer chess game with user registration and live chatting.</p>
                 </div>
             </div>
             <div className="project-card">
-
-                <img src={logo} alt="Project"></img>
-                <hr />
-                <div className="project-card-container">
-                    <h4>Project 1</h4>
-                    <p>Project description here...</p>
-                </div>
-            </div>
-            <div className="project-card">
-
-                <img src={logo} alt="Project"></img>
-                <hr />
-                <div className="project-card-container">
-                    <h4>Project 1</h4>
-                    <p>Project description here...</p>
+                <img src={myplaceIcon} alt="Project"></img>
+                <div className="project-card-text">
+                    <h4>MyPlace</h4>
+                    <p>An apartment rental site for SFSU students.</p>
                 </div>
             </div>
         </div>

@@ -65,14 +65,14 @@ code {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .grid-one {
-    width: 992px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     grid-area: "one";
   }
 
   .grid-two {
-    width: 992px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     grid-area: "two";
@@ -117,7 +117,7 @@ code {
 }
 
 .profile-info .navtab-buttons button {
-  width: 30%;
+  width: 50%;
   border: green;
   cursor: pointer;
   padding: 10px;
@@ -128,7 +128,7 @@ code {
   background-color: grey;
 }
 
-.profile-info #project-tab:hover, #aboutme-tab:hover {
+.profile-info .navtab-buttons button:hover {
   background-color: black !important;
   color: white;
 }
@@ -139,27 +139,22 @@ code {
   box-sizing: border-box;
   font-family: sans-serif;
   font-size: 22px;
-  width: 100%;
+  width: max-content;
   height: 100%;
-  padding: 2%;
-  float: left;
   transition: 0.3s;
 }
 
 .project-card {
+  display: grid;
   background-color: white;
-  color: black;
   border-style: solid;
   border-color: grey;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  width: 275px;
-  float: left;
-  margin: 10px;
-}
-
-.project-card img {
-  width: 50%;
+  color: black;
+  grid-template-rows: auto;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas: "image text";
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -167,7 +162,21 @@ code {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Add some padding inside the card container */
-.project-card-container {
-  padding: 2px 16px;
+.project-card img {
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  grid-area: "image";
+}
+
+.project-card-text {
+  grid-area: text;
+  text-align: left;
+}
+
+.project-card-links {
+  grid-area: "links";
 }
