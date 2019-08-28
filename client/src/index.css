@@ -152,9 +152,11 @@ code {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   color: black;
+  padding: 20px;
   grid-template-rows: auto;
   grid-template-columns: max-content 1fr;
-  grid-template-areas: "image text";
+  grid-template-areas: "image text"
+                       "image link";
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -177,6 +179,32 @@ code {
   text-align: left;
 }
 
-.project-card-links {
-  grid-area: "links";
+.project-card-link {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  margin-right: 20px;
+  margin-top: 20px;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  border-radius: 4px;
+  letter-spacing: .025em;
+  text-decoration: none;
+  transition: all .15s ease;
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  font-size: .9em;
+  font-weight: 600;
+  box-sizing: border-box;
+  background: #006826;
+  color: #fff;
+  grid-area: link;
+}
+
+.project-card-link:hover {
+  background: #008b33;
+  text-decoration: none;
+  transition: .1s ease-in-out
 }

@@ -28,6 +28,7 @@ class ProjectTab extends React.Component {
                     <h4>Team-I Chess</h4>
                     <p>An online multiplayer chess game with user registration and live chatting.</p>
                 </div>
+                <a href="https://myplace-sfsu.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project-card-link">View</a>
             </div>
             <div className="project-card">
                 <img src={myplaceIcon} alt="Project"></img>
@@ -35,6 +36,7 @@ class ProjectTab extends React.Component {
                     <h4>MyPlace</h4>
                     <p>An apartment rental site for SFSU students.</p>
                 </div>
+                <a href="http://team-i-chess.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project-card-link">View</a>
             </div>
         </div>
 
