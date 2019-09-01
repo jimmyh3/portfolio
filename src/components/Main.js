@@ -49,8 +49,8 @@ class Main extends React.Component {
 
         const jsx = 
         <div>
-            <div className="layout">
-                <header className="grid-one profile-heading" ref={this.refTopOfPage}>
+            <div className="layout layout-rwd">
+                <header className="profile-heading" ref={this.refTopOfPage}>
                     {/* Add everything here first and then worry about design later. */}
                     <img src={profile_img} alt="Profile"></img>
                     <h2>Full Stack Developer</h2>
@@ -60,8 +60,7 @@ class Main extends React.Component {
                         Successful working in teams and independently. Love to learn and apply knowledge.
                     </p>
                 </header>
-                <main className="grid-two">
-                    {/* */}
+                <main>
                     <section className="profile-info">
                         <div className="navtab-buttons">
                             <button

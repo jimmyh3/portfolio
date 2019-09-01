@@ -22,60 +22,33 @@ code {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: max-content 1fr;
-  grid-template-areas: "one" "two";
 }
 
 @media only screen and (max-width: 600px) {
-  .grid-one {
+  .layout-rwd > * {
     grid-column: 1 / 13;
-    grid-area: "one";
-  }
-
-  .grid-two {
-    grid-column: 1 / 13;
-    grid-area: "two";
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .grid-one {
+  .layout-rwd > * {
     grid-column: 1 / 13;
-    grid-area: "one";
-  }
-
-  .grid-two {
-    grid-column: 1 / 13;
-    grid-area: "two";
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .grid-one {
+  .layout-rwd > * {
     grid-column: 2 / 12;
-    grid-area: "one";
-  }
-
-  .grid-two {
-    grid-column: 2 / 12;
-    grid-area: "two";
   }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .grid-one {
+  .layout-rwd > * {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    grid-area: "one";
-  }
-
-  .grid-two {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    grid-area: "two";
   }
 }
 
@@ -109,14 +82,14 @@ code {
   height: 100%;
 }
 
-.profile-info .navtab-buttons {
+.navtab-buttons {
   list-style-type: none;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
-.profile-info .navtab-buttons button {
+.navtab-buttons button {
   width: 50%;
   border: green;
   cursor: pointer;
@@ -128,12 +101,12 @@ code {
   background-color: grey;
 }
 
-.profile-info .navtab-buttons button:hover {
+.navtab-buttons button:hover {
   background-color: black !important;
   color: white;
 }
 
-.profile-info .navtab-panel {
+.navtab-panel {
   background-color: lightgray;
   text-align: center;
   box-sizing: border-box;
