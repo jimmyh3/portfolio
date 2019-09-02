@@ -4,11 +4,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #ffeee3;
+  background: rgb(230, 245, 255);
+  font-size: 18px;
 }
 
 body > * {
-  font-family: Calibri, Times New Roman, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code {
@@ -64,18 +65,17 @@ code {
   .navbar-section li a {
     display: block;
     font-weight: bold; 
-    color: #4d5d85;
-    text-align: center;
-    padding: 14px 16px;
+    color: #6b5dff;
     text-decoration: none;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 20px;
   }
 
   .navbar-section li a:hover:not(.active) {
-    background-color: #111;
-  }
-
-  .navbar-section .active {
-    background-color: #4CAF50;
+    border-bottom: 5px solid purple;
+    border-radius: 5px;
+    margin-bottom: 15px;
   }
 
 /**************************
@@ -86,7 +86,6 @@ code {
 
   .profile-heading-section > * {
     display: block;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -97,14 +96,27 @@ code {
     width: 152px;
     border-radius: 50%;
   }
+  .profile-heading-section h1 {
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(131, 175, 229);
+    margin: 0px;
+    padding: 0px;
+  }
 
   .profile-heading-section h2 {
-    font-style: italic;
+    width: fit-content;
+    font-style: normal;
+    font-weight: 400;
+    color: #4d5d85;
+    margin: 0px;
+    padding: 0px;
   }
 
   .profile-heading-section p {
+    color: #4d5d85;
+    font-style: italic;
     margin-top: 30px;
-    width: 90%;
   }
 
 /**************************
@@ -119,10 +131,10 @@ code {
 
   .project-card {
     display: grid;
-    background-color: white;
+    background-color: #d6f3ff;
     border-style: solid;
     border-color: grey;
-    border-radius: 20px;
+    border-radius: 10px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     color: black;
@@ -144,7 +156,7 @@ code {
     width: 200px;
     height: 100%;
     margin-left: auto;
-    margin-right: 25px;
+    margin-right: 50px;
     margin-top: auto;
     margin-bottom: auto;
     grid-area: image;
@@ -210,7 +222,9 @@ code {
   }
 
   .footer-section--display a:hover {
-    background-color: #111;
+    border-bottom: 5px solid purple;
+    border-radius: 5px;
+    margin-bottom: 15px;
   }
 
   /*

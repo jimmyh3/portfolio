@@ -45,7 +45,7 @@ class Main extends React.Component {
                 <nav className="navbar-section">
                     <ul>
                         <li><a href="#contact-jump">Contact</a></li>
-                        <li><a href="#project-jump">Project</a></li>
+                        <li><a href="#project-jump">Projects</a></li>
                     </ul>
                 </nav>
                 <header className="profile-heading-section" ref={this.refTopOfPage}>
