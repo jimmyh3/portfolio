@@ -39,29 +39,17 @@ class Main extends React.Component {
             activePanel = <AboutMeTab content={{project_display: "block"}}/>;
         }
 
-        /*
-        const panelBtnColor = (isActive, activeColor, inactiveColor) => {
-            const style = {};
-            if (isActive) {
-                style.backgroundColor = activeColor;
-            } else {
-                style.backgroundColor = inactiveColor;
-            }
-            return style;
-        }
-        */
-       
         const jsx = 
         <div>
             <div className="layout layout-rwd">
-                <nav className="navbar">
+                <nav className="navbar-section">
                     <ul>
-                        <li><a href="#project-section">Contact</a></li>
-                        <li><a href="#contact-section">Project</a></li>
+                        <li><a href="#contact-jump">Contact</a></li>
+                        <li><a href="#project-jump">Project</a></li>
                     </ul>
                 </nav>
-                <header className="profile-heading" ref={this.refTopOfPage}>
-                    <h1>Jimmy He</h1>
+                <header className="profile-heading-section" ref={this.refTopOfPage}>
+                    <h1 id="project-jump">Jimmy He</h1>
                     <h2>Full Stack Developer</h2>
                     <p>
                         Aspiring developer with a degree in computer science.
@@ -70,36 +58,23 @@ class Main extends React.Component {
                     </p>
                 </header>
                 <main>
-                    <section>
-                        { /*
-                        <div id="project-section" className="navtab-buttons">
-                            
-                            <button
-                                id="project-tab"
-                                style={panelBtnColor(this.state.showProjectTab, "lightgray", "darkgray")}
-                                onClick={() => this.handleClickButtonPanel(0)}
-                            >
-                            Projects
-                            </button>
-                            
-                            <button
-                                id="aboutme-tab"
-                                style={panelBtnColor(this.state.showAboutMeTab, "lightgray", "darkgray")}
-                                onClick={() => this.handleClickButtonPanel(1)}
-                            >
-                            About Me
-                            </button>
-                            
-                        </div>
-                        */}
+                    <section className="project-section">
                         <h2>Projects</h2>
                         {activePanel}
-
                     </section>
                 </main>
                 <footer>
-                    <div id="contact-section">
-
+                    <div ref={this.refContactSection}>
+                        <div className="footer-section">
+                            <h2 id="contact-jump">Contact</h2>
+                            <ul>
+                                <li><a href="mailto:jimmyhe3452@gmail.com">jimmyhe3452@gmail.com</a></li>
+                                <li>&lt;&gt;</li>
+                                <li><a href="https://www.linkedin.com/in/jimmy-he" target="_blank">LinkedIn</a></li>
+                                <li>&lt;&gt;</li>
+                                <li><a href="https://github.com/jimmyh3" target="_blank">github</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </footer>
             </div>
