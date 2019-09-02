@@ -67,13 +67,11 @@ class Main extends React.Component {
                     <div ref={this.refContactSection}>
                         <div className="footer-section">
                             <h2 id="contact-jump">Contact</h2>
-                            <ul>
-                                <li><a href="mailto:jimmyhe3452@gmail.com">jimmyhe3452@gmail.com</a></li>
-                                <li>&lt;&gt;</li>
-                                <li><a href="https://www.linkedin.com/in/jimmy-he" target="_blank">LinkedIn</a></li>
-                                <li>&lt;&gt;</li>
-                                <li><a href="https://github.com/jimmyh3" target="_blank">github</a></li>
-                            </ul>
+                            <div className="footer-section--display">
+                                <a href="mailto:jimmyhe3452@gmail.com" >jimmyhe3452@gmail.com</a>
+                                <a href="https://www.linkedin.com/in/jimmy-he" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href="https://github.com/jimmyh3" target="_blank" rel="noopener noreferrer">github</a>
+                            </div>
                         </div>
                     </div>
                 </footer>

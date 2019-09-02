@@ -22,13 +22,14 @@ code {
   grid-template-rows: max-content 1fr;
 }
 
-@media only screen and (max-width: 600px) {
-  .layout-rwd > * {
-    grid-column: 1 / 13;
+@media only screen and (max-width: 450px) {
+  .layout {
+    display: block;
+    min-width: 400px;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 450px) {
   .layout-rwd > * {
     grid-column: 1 / 13;
   }
@@ -189,22 +190,28 @@ code {
 ***************************/
 
   .footer-section {
-    display: block;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .footer-section li {
-    display: inline;
-    padding: 20px;
+  .footer-section--display {
+    display: grid;
+    grid-template-areas: "email linkedin github";
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .footer-section li a {
-    color: #4d5d85;
+  .footer-section--display a {
+    display: block;
     font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
+  .footer-section--display a:hover {
+    background-color: #111;
+  }
 
   /*
   .navtab-buttons {
