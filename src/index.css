@@ -55,6 +55,7 @@ code {
     list-style-type: none;
     overflow: hidden;
     float: right;
+    margin-bottom: 8vh;
   }
 
   .navbar-section a {
@@ -67,10 +68,19 @@ code {
     margin: 20px;
   }
 
-  .navbar-section a:hover:not(.active) {
-    border-bottom: 5px solid purple;
+  .navbar-section a::after {
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 0px;
+    border-top: 5px solid #9a93e1;
     border-radius: 5px;
-    margin-bottom: 15px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+
+  .navbar-section a:hover::after {
+    width: 100%;
   }
 
 /**************************
@@ -121,6 +131,31 @@ code {
 **************************/
 
   .skills-section {
+    margin-bottom: 5vh;
+  }
+
+  .skills-section h2 {
+    display: block;
+    color: #4d5d85;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .skills-section h2::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding-top: 20px;
+    border-top: 5px solid #4d5d85;
+    border-radius: 10% 10% 10% 10%;
+  }
+
+  .skills-section__layout {
     display: grid;
     grid-template-areas: "technologies languages";
     grid-template-columns: 1fr 1fr;
@@ -130,6 +165,7 @@ code {
     color: #4d5d85;
     font-weight: 400;
     text-align: center;
+    margin-top: 0px;
   }
 
   .skills-section__listing ul {
@@ -146,10 +182,24 @@ code {
     
 **************************/
 
+  .project-section {
+    margin-bottom: 5vh;
+  }
+
   .project-section > h2 {
     color: #4d5d85;
     font-weight: 400;
     text-align: center;
+  }
+
+  .project-section h2::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding-top: 20px;
+    border-top: 5px solid #4d5d85;
+    border-radius: 10% 10% 10% 10%;
   }
 
   .project-card {
@@ -206,7 +256,7 @@ code {
     font-size: .9em;
     font-weight: 600;
     box-sizing: border-box;
-    background: #008b33;
+    background: #9a93e1;
     color: #fff;
     grid-area: link;
     width: max-content;
@@ -214,7 +264,7 @@ code {
   }
 
   .project-card-link:hover {
-    background:#006826;
+    background:#b5affb;
     text-decoration: none;
     transition: .1s ease-in-out
   }
@@ -231,12 +281,26 @@ code {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .footer-section h2::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    width: 150px;
+    padding-top: 20px;
+    border-top: 5px solid #4d5d85;
+    border-radius: 10% 10% 10% 10%;
   }
 
   .footer-section--display {
     display: grid;
     grid-template-areas: "email linkedin github";
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 8vh;
   }
 
   .footer-section--display a {
@@ -247,10 +311,19 @@ code {
     padding-bottom: 10px;
   }
 
-  .footer-section--display a:hover {
-    border-bottom: 5px solid purple;
+  .footer-section--display a::after {
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 0px;
+    border-top: 5px solid #9a93e1;
     border-radius: 5px;
-    margin-bottom: 15px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+
+  .footer-section--display a:hover::after {
+    width: 100%;
   }
 
   /*

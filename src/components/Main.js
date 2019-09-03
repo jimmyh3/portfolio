@@ -57,26 +57,29 @@ class Main extends React.Component {
                 </header>
                 <main>
                     <section className="skills-section">
-                        <div className="skills-section__listing">
-                            <h3>Technologies</h3>
-                            <ul>
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                                <li>Git</li>
-                                <li>RESTful Services</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </div>
-                        <div className="skills-section__listing">
-                            <h3>Languages</h3>
-                            <ul>
-                                <li>Java</li>
-                                <li>PHP</li>
-                                <li>JavaScript</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>MySQL</li>
-                            </ul>
+                        <h2>Skills</h2>
+                        <div className="skills-section__layout">
+                            <div className="skills-section__listing">
+                                <h3>Technologies</h3>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>Git</li>
+                                    <li>RESTful Services</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                            <div className="skills-section__listing">
+                                <h3>Languages</h3>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>PHP</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
                         </div>
                     </section>
                     <section className="project-section">
