@@ -43,10 +43,8 @@ class Main extends React.Component {
         <div>
             <div className="layout layout-rwd">
                 <nav className="navbar-section">
-                    <ul>
-                        <li><a href="#contact-jump">Contact</a></li>
-                        <li><a href="#project-jump">Projects</a></li>
-                    </ul>
+                    <a href="#contact-jump">Contact</a>
+                    <a href="#project-jump">Projects</a>
                 </nav>
                 <header className="profile-heading-section" ref={this.refTopOfPage}>
                     <h1 id="project-jump">Jimmy He</h1>
@@ -58,6 +56,29 @@ class Main extends React.Component {
                     </p>
                 </header>
                 <main>
+                    <section className="skills-section">
+                        <div className="skills-section__listing">
+                            <h3>Technologies</h3>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Git</li>
+                                <li>RESTful Services</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div className="skills-section__listing">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>PHP</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                    </section>
                     <section className="project-section">
                         <h2>Projects</h2>
                         {activePanel}

@@ -51,19 +51,14 @@ code {
 
 ***************************/
 
-  .navbar-section ul {
+  .navbar-section {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-  }
-
-  .navbar-section li {
     float: right;
   }
 
-  .navbar-section li a {
-    display: block;
+  .navbar-section a {
+    float: right;
     font-weight: bold; 
     color: #6b5dff;
     text-decoration: none;
@@ -72,7 +67,7 @@ code {
     margin: 20px;
   }
 
-  .navbar-section li a:hover:not(.active) {
+  .navbar-section a:hover:not(.active) {
     border-bottom: 5px solid purple;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -121,20 +116,49 @@ code {
 
 /**************************
 
+    Skills Section 
+    
+**************************/
+
+  .skills-section {
+    display: grid;
+    grid-template-areas: "technologies languages";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-section__listing h3 {
+    color: #4d5d85;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .skills-section__listing ul {
+    display: grid;
+    grid-template-areas: "one two three";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(max-content, 30px);
+    color: #4d5d85;
+  }
+
+/**************************
+
     Project Section 
     
 **************************/
 
-  .project-section {
+  .project-section > h2 {
+    color: #4d5d85;
+    font-weight: 400;
     text-align: center;
   }
 
   .project-card {
     display: grid;
-    background-color: #d6f3ff;
+    background-color: white;
     border-style: solid;
-    border-color: grey;
+    border-color: transparent;
     border-radius: 10px;
+    border-width: 2px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     color: black;
@@ -201,7 +225,9 @@ code {
 
 ***************************/
 
-  .footer-section {
+  .footer-section h2 {
+    color: #4d5d85;
+    font-weight: 400;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
