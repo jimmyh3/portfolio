@@ -4,12 +4,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(230, 245, 255);
+  font-size: 18px;
 }
 
-body, ul {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body > * {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code {
@@ -18,193 +18,350 @@ code {
 }
 
 .layout {
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: max-content 1fr;
-  grid-template-areas: "one" "two";
 }
 
-@media only screen and (max-width: 600px) {
-  .grid-one {
-    grid-column: 1 / 13;
-    grid-area: "one";
-  }
-
-  .grid-two {
-    grid-column: 1 / 13;
-    grid-area: "two";
+@media only screen and (max-width: 450px) {
+  .layout {
+    display: block;
+    min-width: 400px;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .grid-one {
+@media only screen and (min-width: 450px) {
+  .layout-rwd > * {
     grid-column: 1 / 13;
-    grid-area: "one";
-  }
-
-  .grid-two {
-    grid-column: 1 / 13;
-    grid-area: "two";
   }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .grid-one {
-    grid-column: 2 / 12;
-    grid-area: "one";
-  }
-
-  .grid-two {
-    grid-column: 2 / 12;
-    grid-area: "two";
-  }
-} 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .grid-one {
-    width: 1000px;
+@media only screen and (min-width: 800px) {
+  .layout-rwd > * {
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
-    grid-area: "one";
-  }
-
-  .grid-two {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    grid-area: "two";
   }
 }
 
-.profile-heading > * {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+/**************************
 
-.profile-heading img {
-  margin-top: 50px;
-  height: 152px;
-  width: 152px;
-  border-radius: 50%;
-}
+    Navigation Section
 
-.profile-heading h2 {
-  font-style: italic;
-}
+***************************/
 
-.profile-heading p {
-  margin-top: 30px;
-  width: 85%;
-  font-size: 18px
-}
+  .navbar-section {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+    margin-bottom: 8vh;
+  }
 
-.profile-info {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+  .navbar-section a {
+    float: right;
+    font-weight: bold; 
+    color: #6b5dff;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 20px;
+  }
 
-.profile-info .navtab-buttons {
-  list-style-type: none;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
+  .navbar-section a::after {
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 0px;
+    border-top: 5px solid #9a93e1;
+    border-radius: 5px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
 
-.profile-info .navtab-buttons button {
-  width: 50%;
-  border: green;
-  cursor: pointer;
-  padding: 10px;
-  font-family: sans-serif;
-  font-size: 15px;
-  transition: 0.3s;
-  color: black;
-  background-color: grey;
-}
+  .navbar-section a:hover::after {
+    width: 100%;
+  }
 
-.profile-info .navtab-buttons button:hover {
-  background-color: black !important;
-  color: white;
-}
+/**************************
 
-.profile-info .navtab-panel {
-  background-color: lightgray;
-  text-align: center;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  font-size: 22px;
-  width: 100%;
-  height: 100%;
-  transition: 0.3s;
-}
+    Profile Header Section
 
-.project-card {
-  display: grid;
-  background-color: white;
-  border-style: solid;
-  border-color: grey;
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  color: black;
-  padding: 20px;
-  grid-template-rows: auto;
-  grid-template-columns: max-content 1fr;
-  grid-template-areas: "image text"
-                       "image link";
-}
+***************************/
 
-/* On mouse-over, add a deeper shadow */
-.project-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+  .profile-heading-section > * {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.project-card img {
-  width: 100px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  grid-area: "image";
-}
+  .profile-heading-section img {
+    margin-top: 50px;
+    height: 152px;
+    width: 152px;
+    border-radius: 50%;
+  }
+  .profile-heading-section h1 {
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(131, 175, 229);
+    margin: 0px;
+    padding: 0px;
+  }
 
-.project-card-text {
-  grid-area: text;
-  text-align: left;
-}
+  .profile-heading-section h2 {
+    width: fit-content;
+    font-style: normal;
+    font-weight: 400;
+    color: #4d5d85;
+    margin: 0px;
+    padding: 0px;
+  }
 
-.project-card-link {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  margin-right: 20px;
-  margin-top: 20px;
-  white-space: nowrap;
-  display: inline-block;
-  line-height: 40px;
-  padding: 0 14px;
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-  border-radius: 4px;
-  letter-spacing: .025em;
-  text-decoration: none;
-  transition: all .15s ease;
-  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
-  font-size: .9em;
-  font-weight: 600;
-  box-sizing: border-box;
-  background: #006826;
-  color: #fff;
-  grid-area: link;
-}
+  .profile-heading-section p {
+    color: #4d5d85;
+    font-style: italic;
+    margin-top: 30px;
+  }
 
-.project-card-link:hover {
-  background: #008b33;
-  text-decoration: none;
-  transition: .1s ease-in-out
-}
+/**************************
+
+    Skills Section 
+    
+**************************/
+
+  .skills-section {
+    margin-bottom: 5vh;
+  }
+
+  .skills-section h2 {
+    display: block;
+    color: #4d5d85;
+    font-weight: 400;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .skills-section h2::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding-top: 20px;
+    border-top: 5px solid #4d5d85;
+    border-radius: 10% 10% 10% 10%;
+  }
+
+  .skills-section__layout {
+    display: grid;
+    grid-template-areas: "technologies languages";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-section__listing h3 {
+    color: #4d5d85;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .skills-section__listing ul {
+    display: grid;
+    grid-template-areas: "one two three";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(max-content, 30px);
+    color: #4d5d85;
+  }
+
+/**************************
+
+    Project Section 
+    
+**************************/
+
+  .project-section {
+    margin-bottom: 5vh;
+  }
+
+  .project-section > h2 {
+    color: #4d5d85;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .project-section h2::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding-top: 20px;
+    border-top: 5px solid #4d5d85;
+    border-radius: 10% 10% 10% 10%;
+  }
+
+  .project-card {
+    display: grid;
+    background-color: white;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    border-width: 2px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: black;
+    padding: 20px;
+    margin-bottom: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: "image text"
+                         "image link";
+    text-align: center;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .project-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .project-card img {
+    width: 200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-area: image;
+  }
+
+  .project-card-text {
+    grid-area: text;
+    text-align: left;
+  }
+
+  .project-card-link {
+    margin-right: 20px;
+    margin-top: 20px;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border-radius: 10px;
+    letter-spacing: .025em;
+    text-decoration: none;
+    transition: all .15s ease;
+    font-size: .9em;
+    font-weight: 600;
+    box-sizing: border-box;
+    background: #9a93e1;
+    color: #fff;
+    grid-area: link;
+    width: max-content;
+    min-width: 100px;
+  }
+
+  .project-card-link:hover {
+    background:#b5affb;
+    text-decoration: none;
+    transition: .1s ease-in-out
+  }
+
+/**************************
+
+      Footer Section
+
+***************************/
+
+  .footer-section h2 {
+    color: #4d5d85;
+    font-weight: 400;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .footer-section h2::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    width: 150px;
+    padding-top: 20px;
+    border-top: 5px solid #4d5d85;
+    border-radius: 10% 10% 10% 10%;
+  }
+
+  .footer-section--display {
+    display: grid;
+    grid-template-areas: "email linkedin github";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 8vh;
+  }
+
+  .footer-section--display a {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer-section--display a::after {
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 0px;
+    border-top: 5px solid #9a93e1;
+    border-radius: 5px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+
+  .footer-section--display a:hover::after {
+    width: 100%;
+  }
+
+  /*
+  .navtab-buttons {
+    list-style-type: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  .navtab-buttons button {
+    width: 50%;
+    border: green;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+    color: black;
+    background-color: grey;
+  }
+
+  .navtab-buttons button:hover {
+    background-color: black !important;
+    color: white;
+  }
+  */
+/*******************
+
+    Navigation Panel
+
+********************/
+
+/*
+  .navtab-panel {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+  }
+*/

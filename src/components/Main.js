@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import profile_img from '../resources/MyProfilePicture.jpg';
+//import profile_img from '../resources/MyProfilePicture.jpg';
 import ProjectTab from './main/ProjectTab';
 import AboutMeTab from './main/AboutMeTab';
 
@@ -9,6 +9,8 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
         this.refTopOfPage = React.createRef();
+        this.refProjectSection = React.createRef();
+        this.refContactSection = React.createRef();
         this.state = {
             showProjectTab: true,
             showAboutMeTab: false
@@ -37,22 +39,15 @@ class Main extends React.Component {
             activePanel = <AboutMeTab content={{project_display: "block"}}/>;
         }
 
-        const panelBtnColor = (isActive, activeColor, inactiveColor) => {
-            const style = {};
-            if (isActive) {
-                style.backgroundColor = activeColor;
-            } else {
-                style.backgroundColor = inactiveColor;
-            }
-            return style;
-        }
-
         const jsx = 
         <div>
-            <div className="layout">
-                <header className="grid-one profile-heading" ref={this.refTopOfPage}>
-                    {/* Add everything here first and then worry about design later. */}
-                    <img src={profile_img} alt="Profile"></img>
+            <div className="layout layout-rwd">
+                <nav className="navbar-section">
+                    <a href="#contact-jump">Contact</a>
+                    <a href="#project-jump">Projects</a>
+                </nav>
+                <header className="profile-heading-section" ref={this.refTopOfPage}>
+                    <h1 id="project-jump">Jimmy He</h1>
                     <h2>Full Stack Developer</h2>
                     <p>
                         Aspiring developer with a degree in computer science.
@@ -60,31 +55,50 @@ class Main extends React.Component {
                         Successful working in teams and independently. Love to learn and apply knowledge.
                     </p>
                 </header>
-                <main className="grid-two">
-                    {/* */}
-                    <section className="profile-info">
-                        <div className="navtab-buttons">
-                            <button
-                                id="project-tab"
-                                style={panelBtnColor(this.state.showProjectTab, "lightgray", "darkgray")}
-                                onClick={() => this.handleClickButtonPanel(0)}
-                            >
-                            Projects
-                            </button>
-
-                            <button
-                                id="aboutme-tab"
-                                style={panelBtnColor(this.state.showAboutMeTab, "lightgray", "darkgray")}
-                                onClick={() => this.handleClickButtonPanel(1)}
-                            >
-                            About Me
-                            </button>
+                <main>
+                    <section className="skills-section">
+                        <h2>Skills</h2>
+                        <div className="skills-section__layout">
+                            <div className="skills-section__listing">
+                                <h3>Technologies</h3>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>Git</li>
+                                    <li>RESTful Services</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                            <div className="skills-section__listing">
+                                <h3>Languages</h3>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>PHP</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
                         </div>
-                        
+                    </section>
+                    <section className="project-section">
+                        <h2>Projects</h2>
                         {activePanel}
-
                     </section>
                 </main>
+                <footer>
+                    <div ref={this.refContactSection}>
+                        <div className="footer-section">
+                            <h2 id="contact-jump">Contact</h2>
+                            <div className="footer-section--display">
+                                <a href="mailto:jimmyhe3452@gmail.com" >jimmyhe3452@gmail.com</a>
+                                <a href="https://www.linkedin.com/in/jimmy-he" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href="https://github.com/jimmyh3" target="_blank" rel="noopener noreferrer">github</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
 
