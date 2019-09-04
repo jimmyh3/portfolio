@@ -141,13 +141,14 @@ code {
     border-radius: 50%;
   }
   .profile-heading-section h1 {
+    font-size: 2.10em;
     font-weight: 400;
     color: rgb(131, 175, 229);
     margin: 0px;
     padding: 0px;
   }
 
-  .profile-heading-section h2 {
+  .profile-heading-section h4 {
     width: fit-content;
     font-style: normal;
     font-weight: 400;
@@ -239,18 +240,18 @@ code {
 **************************/
 
   .project-section {
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
   }
 
   .project-card {
     display: grid;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-style: solid;
     border-color: transparent;
     border-radius: 10px;
     border-width: 2px;
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
     color: black;
     padding: 20px;
     margin-bottom: 50px;
@@ -263,7 +264,7 @@ code {
 
   /* On mouse-over, add a deeper shadow */
   .project-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 16px 20px 0 rgba(0,0,0,0.2);
   }
 
   .project-card img {
@@ -273,6 +274,7 @@ code {
     margin-right: 50px;
     margin-top: auto;
     margin-bottom: auto;
+    border-radius: 25%;
     grid-area: image;
   }
 
@@ -299,7 +301,7 @@ code {
     background: #9a93e1;
     color: #fff;
     grid-area: link;
-    width: max-content;
+    /* width: max-content;*/
     min-width: 100px;
   }
 
@@ -319,7 +321,7 @@ code {
     display: grid;
     grid-template-areas: "email linkedin github";
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 8vh;
+    margin-bottom: 25vh;
   }
 
   .footer-section--display a {

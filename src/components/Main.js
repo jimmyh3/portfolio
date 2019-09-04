@@ -48,7 +48,7 @@ class Main extends React.Component {
                 </nav>
                 <header className="profile-heading-section" ref={this.refTopOfPage}>
                     <h1>Jimmy He</h1>
-                    <h2>Full Stack Developer</h2>
+                    <h4>Full Stack Developer</h4>
                     <p>
                         Aspiring developer with a degree in computer science.
                         Experienced in object oriented programming, back end development, testing and debugging.
