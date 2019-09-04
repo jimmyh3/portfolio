@@ -5,7 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(230, 245, 255);
-  font-size: 18px;
+  font-size: 150%;
 }
 
 body > * {
@@ -125,7 +125,6 @@ code {
   }
   .profile-heading-section h1 {
     font-weight: 400;
-    font-size: 50px;
     color: rgb(131, 175, 229);
     margin: 0px;
     padding: 0px;
@@ -162,6 +161,31 @@ code {
     grid-template-columns: 1fr 1fr;
   }
 
+  @media only screen and (max-width: 450px) {
+    .skills-section__layout {
+      display: grid;
+      grid-template-areas: "technologies" "languages";
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media only screen and (min-width: 450px) {
+    .skills-section__layout {
+      display: grid;
+      grid-template-areas: "technologies" "languages";
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 800px) {
+    .skills-section__layout {
+      display: grid;
+      grid-template-areas: "technologies languages";
+      grid-template-columns: 1fr 1fr;
+    }
+  } 
+
   .skills-section__listing h3 {
     color: #4d5d85;
     font-weight: 400;
@@ -175,6 +199,9 @@ code {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: minmax(max-content, 30px);
     color: #4d5d85;
+    list-style-type: none;
+    padding: 0;
+    
   }
 
 /**************************
