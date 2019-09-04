@@ -16,7 +16,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 .layout {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -24,6 +23,10 @@ code {
 }
 
 @media only screen and (max-width: 450px) {
+  body {
+    font-size: 150%;
+  }
+
   .layout {
     display: block;
     min-width: 400px;
@@ -31,17 +34,31 @@ code {
 }
 
 @media only screen and (min-width: 450px) {
+  body {
+    font-size: 150%;
+  }
+
   .layout-rwd > * {
     grid-column: 1 / 13;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
+  body {
+    font-size: 2.5vw;
+  }
+
   .layout-rwd > * {
-    width: 800px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    font-size: 220%;
   }
 }
 
@@ -143,6 +160,7 @@ code {
     color: #4d5d85;
     font-style: italic;
     margin-top: 30px;
+    width: 95%;
   }
 
 /**************************
@@ -201,7 +219,7 @@ code {
     color: #4d5d85;
     list-style-type: none;
     padding: 0;
-    
+
   }
 
 /**************************
