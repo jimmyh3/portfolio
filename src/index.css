@@ -45,6 +45,28 @@ code {
   }
 }
 
+.header-of-section {
+  display: block;
+  color: #4d5d85;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.header-of-section::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  width: 150px;
+  padding-top: 20px;
+  border-top: 5px solid #4d5d85;
+  border-radius: 10% 10% 10% 10%;
+}
+
 /**************************
 
     Navigation Section
@@ -134,27 +156,6 @@ code {
     margin-bottom: 5vh;
   }
 
-  .skills-section h2 {
-    display: block;
-    color: #4d5d85;
-    font-weight: 400;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-  }
-
-  .skills-section h2::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    padding-top: 20px;
-    border-top: 5px solid #4d5d85;
-    border-radius: 10% 10% 10% 10%;
-  }
-
   .skills-section__layout {
     display: grid;
     grid-template-areas: "technologies languages";
@@ -184,22 +185,6 @@ code {
 
   .project-section {
     margin-bottom: 5vh;
-  }
-
-  .project-section > h2 {
-    color: #4d5d85;
-    font-weight: 400;
-    text-align: center;
-  }
-
-  .project-section h2::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    padding-top: 20px;
-    border-top: 5px solid #4d5d85;
-    border-radius: 10% 10% 10% 10%;
   }
 
   .project-card {
@@ -274,27 +259,6 @@ code {
       Footer Section
 
 ***************************/
-
-  .footer-section h2 {
-    color: #4d5d85;
-    font-weight: 400;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-  }
-
-  .footer-section h2::after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 0px;
-    width: 150px;
-    padding-top: 20px;
-    border-top: 5px solid #4d5d85;
-    border-radius: 10% 10% 10% 10%;
-  }
 
   .footer-section--display {
     display: grid;

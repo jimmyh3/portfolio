@@ -57,7 +57,7 @@ class Main extends React.Component {
                 </header>
                 <main>
                     <section className="skills-section">
-                        <h2>Skills</h2>
+                        <h2 className="header-of-section">Skills</h2>
                         <div className="skills-section__layout">
                             <div className="skills-section__listing">
                                 <h3>Technologies</h3>
@@ -83,14 +83,14 @@ class Main extends React.Component {
                         </div>
                     </section>
                     <section className="project-section">
-                        <h2>Projects</h2>
+                        <h2 className="header-of-section">Projects</h2>
                         {activePanel}
                     </section>
                 </main>
                 <footer>
                     <div ref={this.refContactSection}>
                         <div className="footer-section">
-                            <h2 id="contact-jump">Contact</h2>
+                            <h2 id="contact-jump" className="header-of-section">Contact</h2>
                             <div className="footer-section--display">
                                 <a href="mailto:jimmyhe3452@gmail.com" >jimmyhe3452@gmail.com</a>
                                 <a href="https://www.linkedin.com/in/jimmy-he" target="_blank" rel="noopener noreferrer">LinkedIn</a>
