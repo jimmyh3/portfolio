@@ -47,7 +47,7 @@ class Main extends React.Component {
                     <a href="#project-jump">Projects</a>
                 </nav>
                 <header className="profile-heading-section" ref={this.refTopOfPage}>
-                    <h1 id="project-jump">Jimmy He</h1>
+                    <h1>Jimmy He</h1>
                     <h2>Full Stack Developer</h2>
                     <p>
                         Aspiring developer with a degree in computer science.
@@ -83,7 +83,7 @@ class Main extends React.Component {
                         </div>
                     </section>
                     <section className="project-section">
-                        <h2 className="header-of-section">Projects</h2>
+                        <h2 id="project-jump" className="header-of-section">Projects</h2>
                         {activePanel}
                     </section>
                 </main>
