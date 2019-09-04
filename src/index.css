@@ -211,6 +211,17 @@ code {
     margin-top: 0px;
   }
 
+  .skills-section__listing h3::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    width: 25%;
+    padding-top: 20px;
+    border-top: 5px solid #4d5d85;
+    border-radius: 10% 10% 10% 10%;
+  }
+
   .skills-section__listing ul {
     display: grid;
     grid-template-areas: "one two three";
@@ -219,7 +230,6 @@ code {
     color: #4d5d85;
     list-style-type: none;
     padding: 0;
-
   }
 
 /**************************
@@ -314,7 +324,7 @@ code {
 
   .footer-section--display a {
     display: block;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -332,7 +342,7 @@ code {
   }
 
   .footer-section--display a:hover::after {
-    width: 100%;
+    width: 50%;
   }
 
   /*
