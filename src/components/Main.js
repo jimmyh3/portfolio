@@ -3,6 +3,9 @@ import '../index.css';
 //import profile_img from '../resources/MyProfilePicture.jpg';
 import ProjectTab from './main/ProjectTab';
 import AboutMeTab from './main/AboutMeTab';
+//import github_icon from '../resources/github_icon.png';
+//import gmail_icon from '../resources/gmail_icon.svg';
+//import linkedin_icon from '../resources/linkedin_icon.svg';
 
 class Main extends React.Component {
 
@@ -93,9 +96,18 @@ class Main extends React.Component {
                         <div className="footer-section">
                             <h2 id="contact-jump" className="header-of-section">Contact</h2>
                             <div className="footer-section--display">
-                                <a href="mailto:jimmyhe3452@gmail.com" >jimmyhe3452@gmail.com</a>
-                                <a href="https://www.linkedin.com/in/jimmy-he" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                                <a href="https://github.com/jimmyh3" target="_blank" rel="noopener noreferrer">github</a>
+                                <div className="contact-info-item">
+                                    {/*<img src={gmail_icon} alt="gmail icon"></img>*/}
+                                    <a href="mailto:jimmyhe3452@gmail.com" style={{fontSize: "100%"}}>jimmyhe3452@gmail.com</a>
+                                </div>
+                                <div className="contact-info-item">
+                                    {/*<img src={linkedin_icon} alt="linkedin icon"></img>*/}
+                                    <a href="https://www.linkedin.com/in/jimmy-he" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                </div>
+                                <div className="contact-info-item">
+                                    {/*<img src={github_icon} alt="github icon"></img>*/}
+                                    <a href="https://github.com/jimmyh3" target="_blank" rel="noopener noreferrer">Github</a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -16,6 +16,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .layout {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -319,17 +320,28 @@ code {
 
   .footer-section--display {
     display: grid;
-    grid-template-areas: "email linkedin github";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "email" "linkedin" "github";
     margin-bottom: 25vh;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .footer-section--display {
+      grid-template-areas: "email linkedin github";
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 
   .footer-section--display a {
     display: block;
+    color: #4d5d85;
     font-weight: 400;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .footer-section--display a:hover {
+    color: #6b5dff;
   }
 
   .footer-section--display a::after {
