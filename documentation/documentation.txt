@@ -1,13 +1,20 @@
 
-Milestone 1: Mockups - 1 day
-Milestone 2: UI prototype - adhere to mockup (DO NOT DEVIATE - it can ALWAYS be better so don't hold your breath)
-    [x]Include profile picture (optional)
-    [x]Include profile introduction (Resume objective statement)
-    [x]Include navigation bar (Projects & About Me|Contact)
-    [x]Include project cards
-        [x]Include default picture
-        [x]Include project description
-        -Include button link
+[x] Milestone 1: Mockups - 1 day
+[x] Milestone 2: UI prototype - adhere to mockup (DO NOT DEVIATE - it can ALWAYS be better so don't hold your breath)
+    [x] Include profile picture (optional)
+    [x] Include profile introduction (Resume objective statement)
+    [x] Include navigation bar (Projects & About Me|Contact)
+    [x] Include project cards
+        [x] Include default picture
+        [x] Include project description
+        [x] Include button link
 
-Milestone 3: purchase domain name
-Milestone 4: hosting service (aws? stick with heroku?)
+[x] Milestone 3: purchase domain name
+[x] Milestone 4: hosting service (aws? stick with heroku?) - using AWS Amplify
+
+You're consistently lost/unsatisfied with your desing - what's wrong?
+-What's the purpose of your portfolio site?
+    -Advertising my skill set to an audience so they would contact me for potential opportunities.
+-Who is your target audience?
+    -Web developer employers.
+-Answer: why not set up to look like your IDE (visual studio code)

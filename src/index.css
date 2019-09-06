@@ -4,12 +4,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(230, 245, 255);
+  background: #1e1e1e;
+  border-bottom: 20px solid #333333;
+  padding: 0%;
+  margin: 0%;
   font-size: 150%;
 }
 
 body > * {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: Consolas, 'Courier New', monospace
 }
 
 code {
@@ -21,6 +24,7 @@ code {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: max-content 1fr;
+  margin: 0 20px 0 20px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -30,7 +34,7 @@ code {
 
   .layout {
     display: block;
-    min-width: 400px;
+    min-width: 450px;
   }
 }
 
@@ -92,22 +96,56 @@ code {
 ***************************/
 
   .navbar-section {
-    list-style-type: none;
-    overflow: hidden;
-    float: right;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: max-content 1fr;
     margin-bottom: 8vh;
+    background-color: #333333;
+  }
+
+  @media only screen and (max-width: 450px) {
+    .navbar-section {
+      display: block;
+      min-width: 450px;
+    }
+  }
+  
+  @media only screen and (min-width: 450px) {
+    .navbar-section-rwd > * {
+      grid-column: 1 / 13;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1000px) {
+    .navbar-section-rwd > * {
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .navbar-section div {
+    display: inline-block;
+    padding: 20px 0 20px 0;
   }
 
   .navbar-section a {
-    float: right;
-    font-weight: bold; 
-    color: #6b5dff;
+    color: #a8a8a8;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: inherit;
+    padding-bottom: inherit;
     text-decoration: none;
-    text-align: center;
-    padding-bottom: 10px;
-    margin: 20px;
   }
 
+  .navbar-section a:hover {
+    background-color: #5b5b5b;
+    font-weight: bold;
+  }
+
+  /*
   .navbar-section a::after {
     content: "";
     display: block;
@@ -122,6 +160,7 @@ code {
   .navbar-section a:hover::after {
     width: 100%;
   }
+  */
 
 /**************************
 

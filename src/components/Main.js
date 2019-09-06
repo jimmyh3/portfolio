@@ -44,11 +44,13 @@ class Main extends React.Component {
 
         const jsx = 
         <div>
-            <div className="layout layout-rwd">
-                <nav className="navbar-section">
-                    <a href="#contact-jump">Contact</a>
+            <nav className="navbar-section navbar-section-rwd">
+                <div>
                     <a href="#project-jump">Projects</a>
-                </nav>
+                    <a href="#contact-jump">Contact</a>
+                </div>
+            </nav>
+            <div className="layout layout-rwd">
                 <header className="profile-heading-section" ref={this.refTopOfPage}>
                     <h1>Jimmy He</h1>
                     <h4>Full Stack Developer</h4>
