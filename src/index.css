@@ -8,6 +8,7 @@ body {
   border-bottom: 20px solid #333333;
   padding: 0%;
   margin: 0%;
+  color: white;
   font-size: 150%;
 }
 
@@ -215,11 +216,35 @@ code {
   }
 
   .skills-section__layout {
+    display: block;
+    /*
     display: grid;
     grid-template-areas: "technologies languages";
     grid-template-columns: 1fr 1fr;
+    */
   }
 
+  .skills-subheading {
+    color: #6fccff;
+  }
+  
+  .skills-curlybraces {
+    color: white;
+  }
+
+  .skills-subjects {
+    margin: 0px 0px 0px 25px;
+    padding: 0;
+    list-style: none;
+    color: #e28e6a; 
+  }
+
+  .skills-subjects li {
+    display: inline-block;
+    margin: 5px 5px 0px 5px;
+  }
+
+  /*
   @media only screen and (max-width: 450px) {
     .skills-section__layout {
       display: grid;
@@ -236,7 +261,6 @@ code {
     }
   }
   
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 800px) {
     .skills-section__layout {
       display: grid;
@@ -272,6 +296,7 @@ code {
     list-style-type: none;
     padding: 0;
   }
+  */
 
 /**************************
 

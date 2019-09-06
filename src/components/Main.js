@@ -64,27 +64,32 @@ class Main extends React.Component {
                     <section className="skills-section">
                         <h2 className="header-of-section">&lt;&emsp;Skills&emsp;&gt;</h2>
                         <div className="skills-section__layout">
-                            <div className="skills-section__listing">
-                                <h3>Technologies</h3>
-                                <ul>
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>React.js</li>
-                                    <li>Git</li>
-                                    <li>RESTful Services</li>
-                                    <li>Bootstrap</li>
+                            <p className="skills-subheading">technologies
+                                <span className="skills-curlybraces">: &#123;</span> &emsp;
+                                <ul className="skills-subjects">
+                                    <li>"node.js",</li>
+                                    <li>"express.js",</li>
+                                    <li>"react.js",</li>
+                                    <li>"git",</li>
+                                    <li>"restful services",</li>
+                                    <li>"bootstrap"</li>
                                 </ul>
-                            </div>
-                            <div className="skills-section__listing">
-                                <h3>Languages</h3>
-                                <ul>
-                                    <li>Java</li>
-                                    <li>PHP</li>
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>MySQL</li>
+                                <span className="skills-curlybraces">&#125;</span>
+                            </p>
+                            <p className="skills-subheading">languages: 
+                                <span className="skills-curlybraces">&#123;</span> &emsp;
+                                <ul className="skills-subjects">
+                                    <li>"javascript",</li>
+                                    <li>"java",</li>
+                                    <li>"php",</li>
+                                    <li>"mySQL"</li>
+                                    <li>"html",</li>
+                                    <li>"css"</li>
                                 </ul>
+                                <span className="skills-curlybraces">&#125;</span>
+                            </p>
+                            <div className="skills-section__listing">
+
                             </div>
                         </div>
                     </section>
