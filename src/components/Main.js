@@ -62,7 +62,13 @@ class Main extends React.Component {
                 </header>
                 <main>
                     <section className="skills-section">
-                        <h2 className="header-of-section">&lt;&emsp;Skills&emsp;&gt;</h2>
+                        <h2 className="header-of-section">
+                            <span>&lt;</span>
+                            &emsp;
+                            <span>Skills</span>
+                            &emsp;
+                            <span>&gt;</span>
+                        </h2>
                         <div className="skills-section__layout">
                             <p className="skills-subheading">technologies
                                 <span className="skills-curlybraces">: &#123;</span> &emsp;
@@ -94,14 +100,26 @@ class Main extends React.Component {
                         </div>
                     </section>
                     <section className="project-section">
-                        <h2 id="project-jump" className="header-of-section">&lt;&emsp;Projects&emsp;&gt;</h2>
+                        <h2 id="project-jump" className="header-of-section">
+                            <span>&lt;</span>
+                            &emsp;
+                            <span>Projects</span>
+                            &emsp;
+                            <span>&gt;</span>
+                        </h2>
                         {activePanel}
                     </section>
                 </main>
                 <footer>
                     <div ref={this.refContactSection}>
                         <div className="footer-section">
-                            <h2 id="contact-jump" className="header-of-section">&lt;&emsp;Contact&emsp;&gt;</h2>
+                            <h2 id="contact-jump" className="header-of-section">
+                                <span>&lt;</span>
+                                &emsp;
+                                <span>Contact</span>
+                                &emsp;
+                                <span>&gt;</span>
+                            </h2>
                             <div className="footer-section--display">
                                 <div className="contact-info-item">
                                     {/*<img src={gmail_icon} alt="gmail icon"></img>*/}

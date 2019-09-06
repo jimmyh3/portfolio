@@ -70,7 +70,6 @@ code {
 
 .header-of-section {
   display: block;
-  color: #4d5d85;
   font-weight: 400;
   text-align: center;
   padding: 0px;
@@ -88,6 +87,15 @@ code {
   padding-top: 20px;
   border-top: 5px solid #4d5d85;
   border-radius: 10% 10% 10% 10%;
+}
+
+.header-of-section span:nth-child(1),
+.header-of-section span:nth-child(3)  {
+  color: #727272;
+}
+
+.header-of-section span:nth-child(2) {
+  color: #34be79;
 }
 
 /**************************
@@ -181,6 +189,7 @@ code {
     width: 152px;
     border-radius: 50%;
   }
+  
   .profile-heading-section h1 {
     font-size: 2.10em;
     font-weight: 400;
