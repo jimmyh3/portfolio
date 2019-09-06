@@ -74,7 +74,7 @@ code {
   text-align: center;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 1vh;
   padding-bottom: 0px;
 }
 
@@ -181,6 +181,7 @@ code {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10vh;
   }
 
   .profile-heading-section img {
@@ -191,9 +192,9 @@ code {
   }
   
   .profile-heading-section h1 {
-    font-size: 2.10em;
+    font-size: 2.5em;
     font-weight: 400;
-    color: rgb(131, 175, 229);
+    color: #0084dd;
     margin: 0px;
     padding: 0px;
   }
@@ -202,13 +203,13 @@ code {
     width: fit-content;
     font-style: normal;
     font-weight: 400;
-    color: #4d5d85;
+    color: #cb9648;
     margin: 0px;
     padding: 0px;
   }
 
   .profile-heading-section p {
-    color: #4d5d85;
+    color: #008fee;
     font-style: italic;
     margin-top: 30px;
     width: 95%;
@@ -221,7 +222,7 @@ code {
 **************************/
 
   .skills-section {
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
   }
 
   .skills-section__layout {
@@ -235,6 +236,8 @@ code {
 
   .skills-subheading {
     color: #6fccff;
+    margin-top: 0;
+    padding-top: 0;
   }
   
   .skills-curlybraces {
@@ -314,7 +317,7 @@ code {
 **************************/
 
   .project-section {
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
   }
 
   .project-card {
