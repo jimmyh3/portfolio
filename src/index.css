@@ -238,10 +238,10 @@ code {
     padding-top: 0;
   }
   
-  .skills-curlybraces {
+  .skills-subheading span {
     color: white;
   }
-
+  
   .skills-subjects {
     margin: 0px 0px 0px 25px;
     padding: 0;
