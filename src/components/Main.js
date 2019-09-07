@@ -82,8 +82,8 @@ class Main extends React.Component {
                                 </ul>
                                 <span className="skills-curlybraces">&#125;</span>
                             </p>
-                            <p className="skills-subheading">languages: 
-                                <span className="skills-curlybraces">&#123;</span> &emsp;
+                            <p className="skills-subheading">languages 
+                                <span className="skills-curlybraces">: &#123;</span> &emsp;
                                 <ul className="skills-subjects">
                                     <li>"javascript",</li>
                                     <li>"java",</li>
