@@ -197,6 +197,26 @@ code {
     color: #0084dd;
     margin: 0px;
     padding: 0px;
+    display: inline-block;
+    overflow:hidden;
+    border-right: .15em solid #cb9648;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+      typing 2s steps(9, end),
+      blink 4s step-start forwards;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 9ch }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #cb9648 }
   }
 
   .profile-heading-section h4 {
