@@ -199,12 +199,12 @@ code {
     padding: 0px;
     display: inline-block;
     overflow:hidden;
-    border-right: .15em solid gray;
+    border-right: .15em solid #cb9648;
     white-space: nowrap;
     margin: 0 auto;
     animation: 
-      typing 2.5s steps(9, end),
-      blink 1s step-start infinite;
+      typing 2s steps(9, end),
+      blink 4s step-start forwards;
   }
 
   /* The typing effect */
@@ -216,7 +216,7 @@ code {
   /* The typewriter cursor effect */
   @keyframes blink {
     from, to { border-color: transparent }
-    50% { border-color: gray }
+    50% { border-color: #cb9648 }
   }
 
   .profile-heading-section h4 {
