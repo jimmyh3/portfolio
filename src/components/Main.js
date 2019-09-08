@@ -71,28 +71,28 @@ class Main extends React.Component {
                         </h2>
                         <div className="skills-section__layout">
                             <p className="skills-subheading">technologies
-                                <span className="skills-curlybraces">: &#123;</span> &emsp;
+                                <span>: &#123;</span> &emsp;
                                 <ul className="skills-subjects">
-                                    <li>"node.js",</li>
-                                    <li>"express.js",</li>
-                                    <li>"react.js",</li>
-                                    <li>"git",</li>
-                                    <li>"restful services",</li>
+                                    <li>"node.js"</li><span>,</span>
+                                    <li>"express.js"</li><span>,</span>
+                                    <li>"react.js"</li><span>,</span>
+                                    <li>"git"</li><span>,</span>
+                                    <li>"restful services"</li><span>,</span>
                                     <li>"bootstrap"</li>
                                 </ul>
-                                <span className="skills-curlybraces">&#125;</span>
+                                <span>&#125;</span>
                             </p>
                             <p className="skills-subheading">languages 
                                 <span className="skills-curlybraces">: &#123;</span> &emsp;
                                 <ul className="skills-subjects">
-                                    <li>"javascript",</li>
-                                    <li>"java",</li>
-                                    <li>"php",</li>
-                                    <li>"mySQL"</li>
-                                    <li>"html",</li>
-                                    <li>"css"</li>
+                                    <li>"javascript"</li><span>,</span>
+                                    <li>"java"</li><span>,</span>
+                                    <li>"php"</li><span>,</span>
+                                    <li>"mySQL"</li><span>,</span>
+                                    <li>"html"</li><span>,</span>
+                                    <li>"css"</li><span>,</span>
                                 </ul>
-                                <span className="skills-curlybraces">&#125;</span>
+                                <span>&#125;</span>
                             </p>
                             <div className="skills-section__listing">
 
