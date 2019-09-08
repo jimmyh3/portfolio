@@ -1,2 +1,5 @@
 # Jimmy He's Portfolio Site
-My portfolio site listing my other projects and information about myself.
+My personal website created using reactjs, custom html and css; detailing my background and work.
+
+## Website
+www.jimmyhe.me
