@@ -241,7 +241,7 @@ code {
   .skills-subheading span {
     color: white;
   }
-  
+
   .skills-subjects {
     margin: 0px 0px 0px 25px;
     padding: 0;
@@ -266,21 +266,28 @@ code {
 
   .project-card {
     display: grid;
-    background-color: rgb(255, 255, 255);
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 10px;
-    border-width: 2px;
+    background-color: #dddddd;
+    border: 15px solid #111111;
+    border-radius: 20px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
     color: black;
     padding: 20px;
     margin-bottom: 50px;
-    grid-template-rows: auto;
+    grid-template-rows: min-content 1fr;
     grid-template-columns: max-content 1fr;
     grid-template-areas: "image text"
-                         "image link";
+                         "skills link";
+    column-gap: 25px;
     text-align: center;
+  }
+
+  @media only screen and (max-width: 900px)  {
+    .project-card {
+      grid-template-areas: "image" "text" "skills" "link";
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(200px, max-content);
+    }
   }
 
   /* On mouse-over, add a deeper shadow */
@@ -289,14 +296,27 @@ code {
   }
 
   .project-card img {
-    width: 200px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: 50px;
+    width: 300px;
+    height: 300px;
+    background: white;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    border-radius: 25%;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    padding: 0;
+    border-radius: 15px;
     grid-area: image;
+  }
+
+  @media only screen and (max-width: 900px)  {
+    .project-card img {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      height: 225px;
+      width: 100%;
+    }
   }
 
   .project-card-text {
@@ -330,6 +350,11 @@ code {
     background:#b5affb;
     text-decoration: none;
     transition: .1s ease-in-out
+  }
+
+  .project-card-skills {
+    grid-area: skills;
+
   }
 
 /**************************

@@ -26,17 +26,23 @@ class ProjectTab extends React.Component {
                 <img src={teamIChessIcon} alt="Project"></img>
                 <div className="project-card-text">
                     <h4>Team-I Chess</h4>
-                    <p>An online multiplayer chess game with user registration and live chatting.</p>
+                    <p>
+                    Team-I-Chess is an online two player chess game with live chat enabled. 
+                    Users may register accounts, create chess games, chat in-game and in lobby.
+                    </p>
                 </div>
-                <a href="http://team-i-chess.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project-card-link">View</a>
+                <a href="http://team-i-chess.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project-card-link">View Demo</a>
             </div>
             <div className="project-card">
                 <img src={myplaceIcon} alt="Project"></img>
                 <div className="project-card-text">
                     <h4>MyPlace</h4>
-                    <p>An apartment rental site for SFSU students.</p>
+                    <p>
+                    myPlace is an apartment rental site tailored toward San Francisco State University students. 
+                    Students may register and apply to listings.
+                    </p>
                 </div>
-                <a href="https://myplace-sfsu.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project-card-link">View</a>
+                <a href="https://myplace-sfsu.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project-card-link">View Demo</a>
             </div>
         </div>
 
