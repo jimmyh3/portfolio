@@ -267,7 +267,7 @@ code {
   .project-card {
     display: grid;
     background-color: #dddddd;
-    border: 15px solid #111111;
+    border: 8px solid #111111;
     border-radius: 20px;
     /* Add shadows to create the "card" effect */
     box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
@@ -277,7 +277,7 @@ code {
     grid-template-rows: min-content 1fr;
     grid-template-columns: max-content 1fr;
     grid-template-areas: "image text"
-                         "skills link";
+                         "image link";
     column-gap: 25px;
     text-align: center;
   }
@@ -293,6 +293,13 @@ code {
   /* On mouse-over, add a deeper shadow */
   .project-card:hover {
     box-shadow: 0 16px 20px 0 rgba(0,0,0,0.2);
+  }
+
+  .project-card h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+    font-weight: bold;
   }
 
   .project-card img {
@@ -324,37 +331,42 @@ code {
     text-align: left;
   }
 
-  .project-card-link {
+  .project-card-links a {
+    grid-area: link;
+    float: left;
     margin-right: 20px;
     margin-top: 20px;
-    white-space: nowrap;
-    display: inline-block;
-    line-height: 40px;
+    line-height: 50px;
     padding: 0 14px;
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-    border-radius: 10px;
-    letter-spacing: .025em;
-    text-decoration: none;
-    transition: all .15s ease;
+    background: #6b5dff;
+    color: #fff;
     font-size: .9em;
     font-weight: 600;
-    box-sizing: border-box;
-    background: #9a93e1;
-    color: #fff;
-    grid-area: link;
-    /* width: max-content;*/
-    min-width: 100px;
+    letter-spacing: .025em;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .15s ease;
   }
 
-  .project-card-link:hover {
-    background:#b5affb;
+  .project-card-links a:hover {
+    background:#9a91ff;
     text-decoration: none;
     transition: .1s ease-in-out
   }
 
   .project-card-skills {
-    grid-area: skills;
+    padding: 0;
+    list-style-type: none;
+  }
 
+  .project-card-skills li {
+    display: inline-block;
+    border: 2px solid #0084dd;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 
 /**************************
