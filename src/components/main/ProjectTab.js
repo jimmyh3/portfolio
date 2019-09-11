@@ -41,8 +41,8 @@ class ProjectTab extends React.Component {
                     </ul>
                 </div>
                 <div className="project-card-links">
-                    <a href="http://team-i-chess.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project-card-link">View Demo</a>
-                    <a href="https://github.com/jimmyh3/team-i-chess" target="_blank" rel="noopener noreferrer" className="project-card-link">View Source Code</a>
+                    <a href="http://team-i-chess.herokuapp.com/" target="_blank" rel="noopener noreferrer">View Demo</a>
+                    <a href="https://github.com/jimmyh3/team-i-chess" target="_blank" rel="noopener noreferrer">View Source Code</a>
                 </div>
             </div>
             <div className="project-card">

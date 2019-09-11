@@ -2,7 +2,6 @@ import React from 'react';
 import '../index.css';
 //import profile_img from '../resources/MyProfilePicture.jpg';
 import ProjectTab from './main/ProjectTab';
-import AboutMeTab from './main/AboutMeTab';
 //import github_icon from '../resources/github_icon.png';
 //import gmail_icon from '../resources/gmail_icon.svg';
 //import linkedin_icon from '../resources/linkedin_icon.svg';
@@ -35,12 +34,7 @@ class Main extends React.Component {
     }
 
     render() {
-        let activePanel;
-        if (this.state.showProjectTab) { 
-            activePanel = <ProjectTab content={{project_display: "block"}}/>;
-        } else {
-            activePanel = <AboutMeTab content={{project_display: "block"}}/>;
-        }
+        let activePanel = <ProjectTab content={{project_display: "block"}}/>;
 
         const jsx = 
         <div>
