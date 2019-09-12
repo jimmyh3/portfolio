@@ -120,14 +120,14 @@ code {
   }
   
   @media only screen and (min-width: 450px) {
-    .navbar-section-rwd > * {
+    .navbar-section-rwd div {
       grid-column: 1 / 13;
     }
   }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1000px) {
-    .navbar-section-rwd > * {
+    .navbar-section-rwd div {
       width: 1000px;
       margin-left: auto;
       margin-right: auto;
@@ -151,16 +151,15 @@ code {
 
   .navbar-section a:hover {
     background-color: #5b5b5b;
-    font-weight: bold;
   }
-
+  
 /**************************
 
     Profile Header Section
 
 ***************************/
 
-  .profile-heading-section > * {
+  .profile-heading-section {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -214,6 +213,8 @@ code {
   .profile-heading-section p {
     color: #008fee;
     font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     width: 95%;
   }
@@ -404,7 +405,7 @@ code {
   .footer-section--display a::after {
     content: "";
     display: block;
-    margin: 5px auto;
+    margin: auto;
     width: 0px;
     border-top: 5px solid #9a93e1;
     border-radius: 5px;
