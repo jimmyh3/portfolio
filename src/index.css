@@ -409,10 +409,10 @@ code {
   .footer-section--display a::after {
     content: "";
     display: block;
-    margin: auto;
+    margin: 10px auto;
     width: 0px;
     border-top: 5px solid #9a93e1;
-    border-radius: 5px;
+    border-radius: 10px;
     -webkit-transition: all 250ms;
     transition: all 250ms;
   }
