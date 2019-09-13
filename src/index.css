@@ -110,6 +110,7 @@ code {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: max-content 1fr;
     margin-bottom: 8vh;
+    border-radius: 0px 0px 10px 10px;
     background-color: #333333;
   }
 
@@ -120,13 +121,13 @@ code {
     }
   }
 
+  /*
   @media only screen and (min-width: 450px) {
     .navbar-section-rwd div {
       grid-column: 1 / 13;
     }
   }
   
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1000px) {
     .navbar-section-rwd div {
       width: 950px;
@@ -134,6 +135,7 @@ code {
       margin-right: auto;
     }
   }
+  */
 
   .navbar-section div {
     display: inline-block;
@@ -147,6 +149,7 @@ code {
     padding-right: 20px;
     padding-top: inherit;
     padding-bottom: inherit;
+    margin-right: 10px;
     text-decoration: none;
   }
 

@@ -38,7 +38,7 @@ class Main extends React.Component {
 
         const jsx = 
         <div>
-            <nav className="navbar-section navbar-section-rwd">
+            <nav className="navbar-section layout-rwd">
                 <div>
                     <a href="#project-jump">Projects</a>
                     <a href="#contact-jump">Contact</a>
