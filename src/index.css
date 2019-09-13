@@ -10,6 +10,7 @@ body {
   margin: 0%;
   color: white;
   font-size: 150%;
+  overflow-x: hidden;
 }
 
 body > * {
@@ -44,7 +45,7 @@ code {
     font-size: 150%;
   }
 
-  .layout-rwd > * {
+  .layout-rwd header, .layout-rwd main, .layout-rwd footer {
     grid-column: 1 / 13;
   }
 }
@@ -55,8 +56,8 @@ code {
     font-size: 2.30vw;
   }
 
-  .layout-rwd > * {
-    width: 1000px;
+  .layout-rwd {
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -118,7 +119,7 @@ code {
       min-width: 450px;
     }
   }
-  
+
   @media only screen and (min-width: 450px) {
     .navbar-section-rwd div {
       grid-column: 1 / 13;
@@ -128,7 +129,7 @@ code {
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1000px) {
     .navbar-section-rwd div {
-      width: 1000px;
+      width: 950px;
       margin-left: auto;
       margin-right: auto;
     }
