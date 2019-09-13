@@ -59,7 +59,7 @@ class Main extends React.Component {
                         <h2 className="header-of-section">
                             <span>&lt;</span>
                             &emsp;
-                            <span>Skills</span>
+                            <span>Technical Skills</span>
                             &emsp;
                             <span>&gt;</span>
                         </h2>
