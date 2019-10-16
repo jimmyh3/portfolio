@@ -68,7 +68,7 @@ class Main extends React.Component {
                                 <span>: &#123;</span> &emsp;
                                 <ul className="skills-subjects">
                                     <li>"node.js"</li><span>,</span>
-                                    <li>"express.js"</li><span>,</span>
+                                    <li>"AWS Lightsail"</li><span>,</span>
                                     <li>"react.js"</li><span>,</span>
                                     <li>"git"</li><span>,</span>
                                     <li>"restful services"</li><span>,</span>
