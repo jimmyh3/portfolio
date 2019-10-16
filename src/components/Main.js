@@ -47,7 +47,7 @@ class Main extends React.Component {
             <div className="layout layout-rwd">
                 <header className="profile-heading-section" ref={this.refTopOfPage}>
                     <h1>Jimmy He</h1>
-                    <h4>Full Stack Developer</h4>
+                    {/*<h4>Full Stack Developer</h4>*/}
                     <p>
                         Aspiring developer with a degree in computer science.
                         Experienced in object oriented programming, back end development, testing and debugging.

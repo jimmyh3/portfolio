@@ -185,24 +185,37 @@ code {
     padding: 0px;
     display: inline-block;
     overflow:hidden;
+    border-left: 5px solid transparent;
     border-right: .15em solid #cb9648;
+    border-bottom: 5px solid transparent;
     white-space: nowrap;
     margin: 0 auto;
     animation: 
-      typing 2s steps(9, end),
-      blink 4s step-start forwards;
+      typing 2s steps(9, end), /* Takes two seconds to complete and animates in 9 increments */
+      blink 1s step-start 2s forwards;
   }
 
   /* The typing effect */
+  /* Indicates it goes from 0 characters to 9 characters of width and then stops */
   @keyframes typing {
-    from { width: 0 }
-    to { width: 9ch }
+    from { 
+      width: 0;
+    }
+    to { 
+      width: 9ch;
+    } 
   }
 
   /* The typewriter cursor effect */
+  /* Generates gold underline at the end and keeps it */
   @keyframes blink {
-    from, to { border-color: transparent }
-    50% { border-color: #cb9648 }
+    from {
+      border-right: .15em solid #cb9648;
+    }
+    to {
+      border-right: .15em solid transparent;
+      border-bottom: 5px solid #cb9648;
+    }
   }
 
   .profile-heading-section h4 {
@@ -219,7 +232,7 @@ code {
     font-style: italic;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 25px;
     width: 95%;
   }
 
