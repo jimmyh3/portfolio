@@ -49,7 +49,7 @@ class Main extends React.Component {
                     <h1>Jimmy He</h1>
                     {/*<h4>Full Stack Developer</h4>*/}
                     <p>
-                        Aspiring developer with a degree in computer science.
+                        Aspiring backend developer with a degree in computer science.
                         Experienced in object oriented programming, back end development, testing and debugging.
                         Successful working in teams and independently. Love to learn and apply knowledge.
                     </p>
