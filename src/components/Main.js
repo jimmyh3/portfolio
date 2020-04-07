@@ -67,24 +67,28 @@ class Main extends React.Component {
                             <p className="skills-subheading">technologies
                                 <span>: &#123;</span> &emsp;
                                 <ul className="skills-subjects">
-                                    <li>"node.js"</li><span>,</span>
-                                    <li>"AWS Lightsail"</li><span>,</span>
-                                    <li>"react.js"</li><span>,</span>
-                                    <li>"git"</li><span>,</span>
-                                    <li>"restful services"</li><span>,</span>
-                                    <li>"bootstrap"</li>
+                                    <li>"Spring MVC"</li><span>,</span>
+                                    <li>"Maven"</li><span>,</span>
+                                    <li>"JUnit"</li><span>,</span>
+                                    <li>"Selenium"</li><span>,</span>
+                                    <li>"AWS"</li><span>,</span>
+                                    <li>"Git"</li><span>,</span>
+                                    <li>"React.js"</li><span>,</span>
+                                    <li>"Node.js"</li><span>,</span>
+                                    <li>"restful services"</li>
                                 </ul>
                                 <span>&#125;</span>
                             </p>
                             <p className="skills-subheading">languages 
                                 <span className="skills-curlybraces">: &#123;</span> &emsp;
                                 <ul className="skills-subjects">
-                                    <li>"javascript"</li><span>,</span>
-                                    <li>"java"</li><span>,</span>
-                                    <li>"php"</li><span>,</span>
-                                    <li>"mySQL"</li><span>,</span>
-                                    <li>"html"</li><span>,</span>
-                                    <li>"css"</li><span>,</span>
+                                    <li>"Java"</li><span>,</span>
+                                    <li>"JavaScript"</li><span>,</span>
+                                    <li>"C"</li><span>,</span>
+                                    <li>"PHP"</li><span>,</span>
+                                    <li>"HTML"</li><span>,</span>
+                                    <li>"CSS"</li><span>,</span>
+                                    <li>"SQL"</li><span>,</span>
                                 </ul>
                                 <span>&#125;</span>
                             </p>
