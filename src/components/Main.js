@@ -49,9 +49,7 @@ class Main extends React.Component {
                     <h1>Jimmy He</h1>
                     {/*<h4>Full Stack Developer</h4>*/}
                     <p>
-                        Aspiring developer with a degree in computer science.
-                        Experienced in object oriented programming, back end development, testing and debugging.
-                        Successful working in teams and independently. Love to learn and apply knowledge.
+                    Aspiring developer with a degree in computer science. Experienced in object-oriented programming with emphasis in web development, manual and automation testing, conducting Test Driven Development. Successful working in teams and independently.
                     </p>
                 </header>
                 <main>
@@ -67,15 +65,18 @@ class Main extends React.Component {
                             <p className="skills-subheading">technologies
                                 <span>: &#123;</span> &emsp;
                                 <ul className="skills-subjects">
-                                    <li>"Spring MVC"</li><span>,</span>
                                     <li>"Maven"</li><span>,</span>
+                                    <li>"Cucumber"</li><span>,</span>
                                     <li>"JUnit"</li><span>,</span>
                                     <li>"Selenium"</li><span>,</span>
-                                    <li>"AWS"</li><span>,</span>
+                                    <li>"TestNG"</li><span>,</span>
+                                    <li>"Jenkins"</li><span>,</span>
+                                    <li>"JIRA"</li><span>,</span>
+                                    <li>"Postman"</li><span>,</span>
                                     <li>"Git"</li><span>,</span>
                                     <li>"React.js"</li><span>,</span>
-                                    <li>"Node.js"</li><span>,</span>
-                                    <li>"restful services"</li>
+                                    <li>"Express.js"</li><span>,</span>
+                                    <li>"Node.js"</li>
                                 </ul>
                                 <span>&#125;</span>
                             </p>
@@ -85,7 +86,6 @@ class Main extends React.Component {
                                     <li>"Java"</li><span>,</span>
                                     <li>"JavaScript"</li><span>,</span>
                                     <li>"C"</li><span>,</span>
-                                    <li>"PHP"</li><span>,</span>
                                     <li>"HTML"</li><span>,</span>
                                     <li>"CSS"</li><span>,</span>
                                     <li>"SQL"</li><span>,</span>
